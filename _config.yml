@@ -1,0 +1,27 @@
+scripts:
+stylesheets:
+author: Adeptus Ineptus
+title: Epic PDFs
+
+# Where things are
+source: _site
+destination: public_html
+sass:
+  style: compressed
+
+# Outputting
+timezone: America/New_York
+
+# Outputting
+defaults:
+  -
+    values:
+      layout: page
+  -
+    scope:
+      path: assets
+    values:
+      layout: none
+
+# Theme
+theme: baseline
