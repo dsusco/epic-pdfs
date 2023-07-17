@@ -1,0 +1,59 @@
+@page {
+  font: 12pt/16pt Garamond;
+  size: demy-quarto;
+  padding: 0 .625in;
+  margin: .875in 0 .667in;
+
+  @top-center {
+    background: no-repeat center bottom;
+    background-size: contain;
+    content: '';
+    padding: 0 .625in;
+  }
+
+  @bottom-center {
+    background: no-repeat center bottom;
+    background-size: contain;
+    content: counter(page);
+    font-family: FanaticText;
+    color: #fff;
+    padding: 0 .625in;
+  }
+}
+
+@page:left {
+  @top-center {
+    background-image: url(../images/header_left.png);
+  }
+
+  @bottom-center {
+    background-image: url(../images/footer_left.png);
+    text-align: left;
+  }
+}
+
+@page:right {
+  @top-center {
+    background-image: url(../images/header_right.png);
+  }
+
+  @bottom-center {
+    background-image: url(../images/footer_right.png);
+    text-align: right;
+  }
+}
+
+@page datasheet {
+  border: 1pt solid #999;
+  size: demy-quarto landscape;
+  margin: .375in;
+  padding: 7pt;
+
+  @top-center {
+    content: none;
+  }
+
+  @bottom-center {
+    content: none;
+  }
+}

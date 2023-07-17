@@ -1,0 +1,24 @@
+h1, .h1 {
+  font-size: 20pt;
+  line-height: 24pt;
+  page-break-before: right;
+  text-transform: uppercase;
+}
+
+h2, .h2 {
+  font-size: 16pt;
+  line-height: 16pt;
+  column-break-before: always;
+  text-transform: uppercase;
+}
+
+h3, .h3 {
+
+}
+
+p {
+  margin-bottom: 8pt;
+  orphans: 2;
+  text-align: justify;
+  widows: 2;
+}

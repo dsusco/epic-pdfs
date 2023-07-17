@@ -1,0 +1,11 @@
+.formation_options {
+  list-style-type: none;
+  padding-left: .75em;
+  position: relative;
+
+  li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+  }
+}

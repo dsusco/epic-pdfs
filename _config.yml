@@ -1,7 +1,6 @@
 scripts:
 stylesheets:
 author: Adeptus Ineptus
-title: Epic PDFs
 
 # Where things are
 source: _site
@@ -16,7 +15,7 @@ timezone: America/New_York
 defaults:
   -
     values:
-      layout: page
+      layout: army_list
   -
     scope:
       path: assets

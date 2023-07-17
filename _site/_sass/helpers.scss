@@ -1,0 +1,58 @@
+._responsive_table_wrapper {
+  overflow-x: auto;
+}
+
+._two_column {
+  column-count: 2;
+  column-gap: .3in;
+}
+
+._column_break {
+  column-break-before: always;
+}
+
+._float_none { float: none; }
+._float_left { float: left; }
+._float_right { float: right; }
+._float_inside { float: inside; }
+._float_outside { float: outside; }
+._float_footnote { float: footnote; }
+._float_inline_footnote { float: inline-footnote; }
+._float_column_footnote { float: prince-column-footnote; }
+._float_column_inline_footnote { float: prince-column-inline-footnote; }
+._float_snap { float: prince-snap; }
+._float_top { float: top; }
+._float_top_next { float: top next; }
+._float_top_unless_fit { float: top unless-fit; }
+._float_bottom { float: bottom; }
+._float_bottom_next { float: bottom next; }
+._float_bottom_unless_fit { float: bottom unless-fit; }
+._float_column_top { float: column-top; }
+._float_column_top_next { float: column-top next; }
+._float_column_top_unless_fit { float: column-top unless-fit; }
+._float_column_bottom { float: column-bottom; }
+._float_column_bottom_next { float: column-bottom next; }
+._float_column_bottom_unless_fit { float: column-bottom unless-fit; }
+._float_column_top_corner { float: column-top-corner; }
+._float_column_top_corner_next { float: column-top-corner next; }
+._float_column_top_corner_unless_fit { float: column-top-corner unless-fit; }
+._float_column_bottom_corner { float: column-bottom-corner; }
+._float_column_bottom_corner_next { float: column-bottom-corner next; }
+._float_column_bottom_corner_unless_fit { float: column-bottom-corner unless-fit; }
+
+._margin_bottom {
+  margin-bottom: 8pt;
+}
+
+._text_left {
+  text-align: left;
+}
+._text_right {
+  text-align: right;
+}
+._text_center {
+  text-align: center;
+}
+._text_justify {
+  text-align: justify;
+}

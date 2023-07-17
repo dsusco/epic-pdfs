@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/dsusco/baseline
-  revision: 5e02036cea9eeffd6cbb9c6db3a4bdd3169b7d6b
+  revision: 9ff701e90599ec91bcdbee2f9e7988aace7529e9
   branch: main
   specs:
-    baseline (0.1.0)
+    baseline (0.1.1)
       jekyll (~> 4.3.2)
       jekyll-js-converter (~> 1.0.0)
 
