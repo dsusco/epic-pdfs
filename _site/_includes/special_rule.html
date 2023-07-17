@@ -1,0 +1,6 @@
+{% assign special_rule = site.data.special_rules[include.id] %}
+<aside class="special_rule">
+  <h3 id="{{ special_rule.slug | underscore }}" class="title">{{ special_rule.title }}</h3>
+
+{{ special_rule.content | markdownify }}
+</aside>

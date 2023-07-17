@@ -1,21 +1,15 @@
-.description_list {
+dl {
   > dt {
-    margin-bottom: 8pt;
+    float: left;
+    margin: 0 .25em 0 0;
+
+    &::after {
+      content: ':';
+    }
   }
 
   > dd {
     margin-bottom: 8pt;
     text-align: justify;
-  }
-
-  &._colonated {
-    > dt {
-      float: left;
-      margin: 0 .25em 0 0;
-
-      &::after {
-        content: ':';
-      }
-    }
   }
 }

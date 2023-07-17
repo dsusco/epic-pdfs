@@ -1,0 +1,22 @@
+.special_rule {
+  background: #eee;
+  border: 1pt solid #999;
+  padding: 7pt .5em;
+  margin-bottom: 8pt;
+
+  > .title {
+    font-style: italic;
+    text-align: center;
+
+    &::before {
+      content: 'Special Rule';
+      display: block;
+      font-style: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}

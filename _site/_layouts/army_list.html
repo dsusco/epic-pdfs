@@ -1,34 +1,28 @@
 ---
 layout: default
 ---
-<section id="{{ page.title | underscore }}_army_list" class="army_list">
-  <h1 class="title">{{ page.title }} Army List</h1>
+<section class="army_list">
+  <h1 id="{{ page.slug | underscore }}_army_list" class="title">{{ page.title }} Army List</h1>
 
   <section class="information _two_column">
     {{ page.introduction | markdownify }}
-
     <h3>Forces</h3>
 
     <p>The {{ page.title }} Army List uses the datasheets from {{ page.forces | force_list }}.</p>
 
     <h3>Using The Army List</h3>
 
-    {{ page.using_the_army_list | markdownify }}
+{{ page.using_the_army_list | markdownify }}{% if page.special_rules_text %}
+    <h3>Special Rules</h3>
 
-    {% if page.special_rules_text %}<h3>Special Rules</h3>
-
-    {{ page.special_rules_text | markdownify }}{% endif %}
-{% for sr in page.special_rules %}
-    {% include_special_rule id=sr %}
-{% endfor %}
+{{ page.special_rules_text | markdownify }}{% endif %}{% for sr in page.special_rules %}
+{% include special_rule.html id=sr %}{% endfor %}
   </section>
 
   <section class="tables">
     <h2 class="title">{{ page.title }} Army List</h2>
 {{ page.content }}
-  </section>
+  </section>{% for f in page.forces %}
+{% include force.html id=f %}{% endfor %}
 
-{% for f in page.forces %}
-  {% include force.html id=f %}
-{% endfor %}
 </section>

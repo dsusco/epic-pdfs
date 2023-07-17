@@ -3,13 +3,11 @@ Jekyll::Hooks.register(:site, :post_write) do |site|
 
   Dir.mkdir(pdfs_dir) unless File.directory?(pdfs_dir)
 
-  site.pages.each do |page|
-    if page.html?
-      prince_commands(
-        File.join(pdfs_dir, "#{page.basename}-#{File.mtime(page.destination('')).strftime('%F')}.pdf"),
-        page.destination('')
-      )
-    end
+  site.collections['army_lists'].docs.each do |army_list|
+    prince_commands(
+      File.join(pdfs_dir, "#{army_list.data['slug']}-#{File.mtime(army_list.destination('')).strftime('%F')}.pdf"),
+      army_list.destination('')
+    )
   end
 end
 
