@@ -9,7 +9,7 @@ module Jekyll
     def force_list(forces)
       forces.map { |f|
         force = @context.registers[:site].data['forces'][f]
-        content_tag(:a, "the #{ force.data['title'] } Forces section", { href: "##{force.data['slug'].underscore}_forces" })
+        content_tag(:a, "the #{ force.data['name'] } Forces section", { href: "##{force.data['slug'].underscore}_forces" })
       }.to_sentence()
     end
   end

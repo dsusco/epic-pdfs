@@ -2,13 +2,13 @@
 layout: default
 ---
 <section class="army_list">
-  <h1 id="{{ page.slug | underscore }}_army_list" class="title">{{ page.title }} Army List</h1>
+  <h1 id="{{ page.slug | underscore }}_army_list" class="name">{{ page.name }} Army List</h1>
 
   <section class="information _two_column">
     {{ page.introduction | markdownify }}
     <h3>Forces</h3>
 
-    <p>The {{ page.title }} Army List uses the datasheets from {{ page.forces | force_list }}.</p>
+    <p>The {{ page.name }} Army List uses the datasheets from {{ page.forces | force_list }}.</p>
 
     <h3>Using The Army List</h3>
 
@@ -20,7 +20,7 @@ layout: default
   </section>
 
   <section class="tables">
-    <h2 class="title">{{ page.title }} Army List</h2>
+    <h2 class="name">{{ page.name }} Army List</h2>
 {{ page.content }}
   </section>{% for f in page.forces %}
 {% include force.html id=f %}{% endfor %}

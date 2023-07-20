@@ -1,7 +1,7 @@
 .army_list {
   page-break-before: always;
 
-  > .title {
+  > .name {
     font: 32pt/32pt Impact;
     margin-bottom: 8pt;
     text-align: center;
@@ -13,11 +13,11 @@
   > .tables {
     page-break-before: always;
 
-    > .title {
+    > .name {
       text-align: center;
     }
 
-    > .title + p {
+    > .name + p {
       margin-bottom: 4pt;
     }
   }
@@ -26,7 +26,7 @@
     page-break-before: right;
     page: datasheet;
 
-    > .title {
+    > .name {
       text-align: center;
       margin-bottom: 8pt;
     }
