@@ -1,0 +1,52 @@
+.reference_sheet {
+  border-collapse: collapse;
+  margin-bottom: 3pt;
+
+  > caption {
+    padding: 0 .25em;
+  }
+
+  > caption > .name {
+    font-size: 10pt;
+    line-height: 12pt;
+    text-align: center;
+  }
+
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: 0 .25em;
+      }
+    }
+  }
+
+  > thead > tr > th {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+
+    &::after {
+      border-bottom: 1pt solid #999;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    &.name,
+    &.weapons,
+    &.firepower,
+    &.notes {
+      text-align: left;
+    }
+  }
+
+  > tbody > tr:nth-child(odd) {
+    background: #eee;
+  }
+}

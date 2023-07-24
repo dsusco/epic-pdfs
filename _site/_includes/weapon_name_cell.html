@@ -1,0 +1,2 @@
+{% assign weapon = site.data.weapons[include.w.id] %}{% for m in weapon.modes %}
+    {{ weapon | weapon_name: w, m }}{% endfor %}

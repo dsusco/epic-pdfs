@@ -1,0 +1,15 @@
+.special_rules_list {
+  display: inline;
+
+  > li {
+    display: inline;
+
+    &::after {
+      content: ', ';
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+  }
+}

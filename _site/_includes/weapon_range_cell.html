@@ -1,0 +1,2 @@
+{% assign weapon = site.data.weapons[include.w.id] %}{% for m in weapon.modes %}
+    <div>{{ m.range }}</div>{% endfor %}

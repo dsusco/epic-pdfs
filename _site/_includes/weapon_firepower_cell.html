@@ -1,0 +1,6 @@
+{% assign weapon = site.data.weapons[include.w.id] %}{% for m in weapon.modes %}
+    <div>
+      <span>{{ m.firepower }}</span>{% if include.w.arc %}
+      <span>{{ w | weapon_arc: m }}</span>{% endif %}{% for sr in m.special_rules %}{% assign special_rule = site.data.special_rules[sr] %}
+      <abbr title="{{ special_rule.name }}">{{ special_rule.abbr }}</abbr>{% endfor %}
+    </div>{% endfor %}
