@@ -3,15 +3,6 @@ table {
   margin-bottom: 8pt;
   width: 100%;
 
-  &._striped {
-    > tbody > tr:nth-child(odd) {
-      background-color: #eee;
-    }
-    > tbody > tr:nth-child(even) {
-      background-color: #fff;
-    }
-  }
-
   > caption {
     padding: 0 .5em;
   }
@@ -24,6 +15,13 @@ table {
       > td {
         padding: 0 .5em;
       }
+    }
+  }
+
+  &._striped {
+    > tbody > tr {
+      &:nth-child(odd) { background-color: #eee; }
+      &:nth-child(even) { background-color: #fff; }
     }
   }
 }

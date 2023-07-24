@@ -1,3 +1,5 @@
+#ruby=3.1.2
+#ruby-gemset=epic-pdfs
 source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.3.2'

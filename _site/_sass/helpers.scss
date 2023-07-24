@@ -4,7 +4,7 @@
 
 ._two_column {
   column-count: 2;
-  column-gap: .3in;
+  column-gap: .375in;
 }
 
 ._column_break {
@@ -39,10 +39,6 @@
 ._float_column_bottom_corner { float: column-bottom-corner; }
 ._float_column_bottom_corner_next { float: column-bottom-corner next; }
 ._float_column_bottom_corner_unless_fit { float: column-bottom-corner unless-fit; }
-
-._margin_bottom {
-  margin-bottom: 8pt;
-}
 
 ._text_left {
   text-align: left;

@@ -1,4 +1,4 @@
-function cellCount(row) {
+function cellCount (row) {
   return Array.prototype.slice.call(row.querySelectorAll('th, td')).
     reduce(function (cells, cell) {
       try {
@@ -26,7 +26,7 @@ Array.prototype.slice.call(document.querySelectorAll('.army_table:not(:has(.army
 
       if (cells === columns) stripe = !stripe
 
-      if (stripe) classes.push('striped')
+      if (stripe) classes.push('_striped')
 
       row.className = classes.join(' ')
     })

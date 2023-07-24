@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section class="army_list">
+<section class="army_list {{ page.classes | join: ' ' }} _{{ page.slug | underscore }}">
   <h1 id="{{ page.slug | underscore }}_army_list" class="name">{{ page.name }} Army List</h1>
 
   <section class="information _two_column">
@@ -21,8 +21,12 @@ layout: default
 
   <section class="tables">
     <h2 class="name">{{ page.name }} Army List</h2>
+
 {{ page.content }}
-  </section>{% for f in page.forces %}
+  </section>
+
+  <section class="forces">{% for f in page.forces %}
 {% include force.html id=f %}{% endfor %}
+  </section>
 
 </section>

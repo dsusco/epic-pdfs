@@ -1,5 +1,5 @@
 {% assign special_rule = site.data.special_rules[include.id] %}
-<aside class="special_rule">
+<aside class="special_rule {{ special_rule.classes | join: ' ' }} _{{ special_rule.slug | underscore }}">
   <h3 id="{{ special_rule.slug | underscore }}" class="name">{{ special_rule.name }}</h3>
 
 {{ special_rule.content | markdownify }}

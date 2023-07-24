@@ -1,11 +1,12 @@
 .formation_options {
   list-style-type: none;
-  padding-left: .75em;
-  position: relative;
+  margin-bottom: 0;
 
-  li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
+  > li {
+    margin-bottom: 3pt;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

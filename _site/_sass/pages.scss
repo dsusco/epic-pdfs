@@ -43,11 +43,13 @@
   }
 }
 
-@page datasheet {
+@page reference_sheet {
   border: 1pt solid #999;
   size: demy-quarto landscape;
+  font-size: 9pt;
+  line-height: 12pt;
   margin: .375in;
-  padding: 7pt;
+  padding: 2pt .25em;
 
   @top-center {
     content: none;

@@ -27,16 +27,14 @@
       border-top: 1pt solid #999;
     }
 
-    > tr.striped {
+    > tr._striped {
       background: #eee;
     }
   }
 
   &._container {
-    margin-bottom: 4pt;
-
     > tbody:first-of-type {
-      border-top: 0;
+      border-top-color: #fff;
     }
   }
 

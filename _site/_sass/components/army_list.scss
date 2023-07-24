@@ -22,13 +22,26 @@
     }
   }
 
-  > .datasheet {
+  > .forces {
+    font-size: 9pt;
+    line-height: 12pt;
     page-break-before: right;
-    page: datasheet;
+    page: reference_sheet;
 
-    > .name {
-      text-align: center;
-      margin-bottom: 8pt;
+    .special_rule {
+      font-size: 10pt;
+      padding: 2pt .25em;
+
+      &._one_half,
+      &.one-half {
+        float: left;
+        margin-right: .25em;
+        width: 5.187in;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
     }
   }
 }
