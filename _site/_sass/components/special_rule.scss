@@ -1,8 +1,9 @@
 .special_rule {
   background: #eee;
   border: 1pt solid #999;
-  padding: 7pt .5em;
   margin-bottom: 8pt;
+  padding: 7pt .5em;
+  page-break-inside: avoid;
 
   > .name {
     font-style: italic;
@@ -14,9 +15,5 @@
       font-style: normal;
       text-transform: uppercase;
     }
-  }
-
-  > :last-child {
-    margin-bottom: 0;
   }
 }

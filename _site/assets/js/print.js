@@ -9,7 +9,7 @@ function cellCount (row) {
     }, 0)
 }
 
-Array.prototype.slice.call(document.querySelectorAll('.army_table:not(:has(.army_table))'))
+Array.prototype.slice.call(document.querySelectorAll('.army_chart:not(:has(.army_chart))'))
   .forEach(function (armyTable) {
     var
       rows = Array.prototype.slice.call(armyTable.querySelectorAll('tbody > tr')),

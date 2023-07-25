@@ -11,7 +11,7 @@
   <td class="range">{% for w in unit.weapons %}{% include weapon_range_cell.html w=w %}{% endfor %}  </td>
   <td class="firepower">{% for w in unit.weapons %}{% include weapon_firepower_cell.html w=w %}{% endfor %}  </td>
   <td class="notes">{% if unit.special_rules %}
-    <ul class="special_rules_list">{% for sr in unit.special_rules %}
+    <ul class="comma_list _ended">{% for sr in unit.special_rules %}
       <li>{{ site.data.special_rules[sr].name }}</li>{% endfor %}
     </ul>
 {% endif %}{% if unit.notes %}

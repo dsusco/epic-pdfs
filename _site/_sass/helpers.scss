@@ -1,10 +1,15 @@
-._responsive_table_wrapper {
-  overflow-x: auto;
-}
-
 ._two_column {
   column-count: 2;
   column-gap: .375in;
+
+  &._charts {
+    column-gap: .5em;
+    padding-bottom: 3pt;
+  }
+
+  &._forces {
+    column-gap: .5em;
+  }
 }
 
 ._column_break {

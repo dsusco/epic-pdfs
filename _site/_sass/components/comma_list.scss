@@ -1,7 +1,8 @@
-.special_rules_list {
+.comma_list {
   display: inline;
 
-  > li {
+  > li,
+  > .item {
     display: inline;
 
     &::after {
@@ -10,6 +11,12 @@
 
     &:last-child::after {
       content: none;
+    }
+  }
+
+  &._ended {
+    > li:last-child::after {
+      content: '.';
     }
   }
 }
