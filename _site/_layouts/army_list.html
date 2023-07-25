@@ -17,7 +17,8 @@ layout: default
 
 {{ page.special_rules_text | markdownify }}{% endif %}{% for sr in page.special_rules %}
 {% include special_rule.html id=sr %}{% endfor %}
-  </section>
+  </section>{% if page.filler_image %}
+{% include filler_image.html image=page.filler_image %}{% endif %}
 
   <section class="charts">
     <h2 class="name">{{ page.name }} Army List</h2>

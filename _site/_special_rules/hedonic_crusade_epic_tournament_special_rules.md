@@ -1,7 +1,7 @@
 ---
 name: Hedonic Crusade Epic Tournament Special Rules
 ---
-All formations in a Hedonic Crusade Slaanesh Cultist army owe allegiance to Slaanesh and may summon the following daemons if they have <em>Daemonic Pact</em>:
+All formations in a Hedonic Crusade Slaanesh Cultist army owe allegiance to Slaanesh and may summon the following daemons if they are unbroken and have <em>Daemonic Pact</em>:
 
 <table class="_striped">
   <thead>
