@@ -39,4 +39,8 @@ units:
 special_rules:
   - augmented-summoning
   - daemonic-focus
+
+special_rule_classes:
+  - _two_column
+  - _forces
 ---
