@@ -1,6 +1,6 @@
 {% assign weapon = site.data.weapons[include.w.id] %}{% for m in weapon.modes %}
     <div class="comma_list">
-      <span class="item">{{ m.firepower }}</span>{% if include.w.arc %}
-      <span class="item">{{ w | weapon_arc: m }}</span>{% endif %}{% for sr in m.special_rules %}{% assign special_rule = site.data.special_rules[sr] %}
+      <span class="item">{{ m.firepower }}</span>{% if include.w.arc and (m.range != '(bc)' and m.range != '(15cm)') %}
+      <span class="item">{{ w.arc }}</span>{% endif %}{% for sr in m.special_rules %}{% assign special_rule = site.data.special_rules[sr] %}
       <abbr class="item" title="{{ special_rule.name }}">{{ special_rule.abbr }}</abbr>{% endfor %}
     </div>{% endfor %}
